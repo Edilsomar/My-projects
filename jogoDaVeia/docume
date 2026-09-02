@@ -1,0 +1,14 @@
+function handleSpaceClick(item) {
+  setListSpaces(
+    listSpaces.map((space) => {
+      // Se for o item clicado, cria um novo objeto com o símbolo atualizado
+      if (space.id === item.id) {
+        return { ...space, simbol: 'O' };
+      }
+      // Se não for o item clicado, retorna ele sem alterações
+      return space;
+    })
+  );
+}
+
+unica parte q usei da IA
